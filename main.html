@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>JS Script</title>
 
     <link href="css/style.css" type="text/css" rel="stylesheet">
@@ -12,16 +11,13 @@
 <body>
     <div>
         <script src="script/contactScpt.js"></script>
-        <form onsubmit="this.style.display='none'" id="usrform">
-            Email <input type="text" name="email"><br>
-            Subject <input type="text" name="subject" ><br>
-            <textarea name="text" form="usrform" size="30" maxlength="70">
-                Enter text here...</textarea><br><br>
-                <input type="submit" value="Submit" onclick="myFunction()">
-            
-            <div id="results"></div>
-        </form>
+        <form id="usrform">
+            Email <input type="text" name="email" required><br><br>
+            Subject <input type="text" name="subject" required><br><br>
+            <textarea name="text" form="usrform" cols="30" rows="20" required>Enter text here...</textarea><br><br>
+            <button onclick="myFunction()">Click me</button>
 
+        </form>
     </div>
 </body>
 
